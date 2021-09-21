@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "rollup": "^2.56.3",
+    "three": "^0.132.2"
+  }
+}
