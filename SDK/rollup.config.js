@@ -10,7 +10,8 @@ export default [
     output: {
       name: 'SSSDK',
         file: pkg.browser,
-        format: 'umd'
+        format: 'umd',
+        sourcemap: true
     },
     plugins: [
       resolve(),

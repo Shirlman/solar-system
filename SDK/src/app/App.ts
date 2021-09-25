@@ -70,7 +70,9 @@ export default class App
 
         //
 
-        window.addEventListener( 'resize', this.onWindowResize );
+        window.addEventListener( 'resize', this.onWindowResize.bind(this) );
+
+        this.animate()
     }
 
     onWindowResize() {
@@ -84,7 +86,7 @@ export default class App
 
     animate() {
 
-        requestAnimationFrame( this.animate );
+        requestAnimationFrame( this.animate.bind(this) );
 
         this.controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
 
